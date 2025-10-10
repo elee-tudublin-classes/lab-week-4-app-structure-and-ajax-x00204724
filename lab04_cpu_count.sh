@@ -4,8 +4,8 @@
 # Purpose: Count number of CPU cores and compare with user input ($1)
 
 # Get the number of CPUs (using nproc or /proc/cpuinfo)
-num_cpu=$(nproc)   # preferred modern method
-# num_cpu=$(grep -c "processor" /proc/cpuinfo)   # alternative method
+num_cpu=$(nproc)   
+
 
 # Compare with the required number ($1)
 if [ "$num_cpu" -lt "$1" ]; then
