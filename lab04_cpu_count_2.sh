@@ -12,9 +12,8 @@ fi
 
 # Get the number of CPUs
 num_cpu=$(nproc)   # modern method
-# num_cpu=$(grep -c "processor" /proc/cpuinfo)   # alternative
 
-# Compare with the required number ($1)
+# Compare with the required number 
 if [ "$num_cpu" -lt "$1" ]; then
     echo "Error: This system has only $num_cpu CPU(s), but $1 are required."
     exit 1
