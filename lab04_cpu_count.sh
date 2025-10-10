@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# Script: lab04_cpu_count.sh
-# Purpose: Count number of CPU cores and compare with user input ($1)
+# Count number of CPU cores and compare with user input
 
-# Get the number of CPUs (using nproc or /proc/cpuinfo)
-num_cpu=$(nproc)   
+num_cpu=$(nproc)
 
-
-# Compare with the required number ($1)
 if [ "$num_cpu" -lt "$1" ]; then
     echo "Error: This system has only $num_cpu CPU(s), but $1 are required."
     exit 1
