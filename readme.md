@@ -1,38 +1,18 @@
-# Lab 04 - CPU Count Scripts
+Example Prompts
 
-This lab focuses on writing Bash scripts to count the number of CPU cores on a Linux system and validate against user input. The lab progresses through three exercises, each adding more functionality and error handling.
+"How do I compare the number of CPUs with a value in Bash?"
 
-In **Exercise 1**, the script `lab04_cpu_count.sh` counts the number of CPU cores and compares it to the user-provided argument `$1`. If the number of CPUs is less than `$1`, it prints an error and exits. Otherwise, it prints an OK message.  
+"Explain what this Bash script does in simple terms."
 
-**Example Usage:**
-```bash
-./lab04_cpu_count.sh 4
+"How do I make my script show a helpful message if no argument is given?"
 
-In Exercise 2, the script lab04_cpu_count_2.sh adds a check to ensure the user provides $1. If no argument is given, it prints a usage message:
+Code Snippets Improved
 
-Usage: lab04_cpu_count_2.sh [MAX_NUM_CORES]
+Replaced a hardcoded script name with $(basename "$0") in the usage message so it always shows the correct file name.
 
-Otherwise, it behaves like Exercise 1.
-./lab04_cpu_count_2.sh           # Shows usage message
-./lab04_cpu_count_2.sh 4         # Checks CPU cores
+Added date and hostname commands based on AI advice to include useful system information at the end of the script.
 
-In Exercise 3, the script lab04_cpu_count_3.sh adds two additional Bash commands: date to display the current date and time when the script is run, and hostname to display the system hostname. This provides more context about when and on which system the script was executed.
+Reflection
 
-Example Output:
-
-OK: This system has 8 CPU(s), which meets or exceeds the requirement of 4.
-
-Additional system info:
-Script run on: Fri Oct 10 15:20:30 UTC 2025
-Checked system hostname: my-vm-instance
-
-'date' command displays the current date and time, which helps track when the script was run.
-'hostname' command shows the system's hostname.
-
-
-
-
-
-
-
+I used AI to get guidance on Bash syntax and ideas for improving the script, but I wrote and tested all the code myself to make sure I understood everything and kept the work original.
 
