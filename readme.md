@@ -14,5 +14,5 @@ Added date and hostname commands based on AI advice to include useful system inf
 
 Reflection
 
-I used AI to get guidance on Bash syntax and ideas for improving the script, but I wrote and tested all the code myself to make sure I understood everything and kept the work original.
+I used AI to get guidance on Bash syntax and ideas for improving the script, but I wrote and tested all the code myself to make sure I understood everything and kept the work original. I reviewed and adapted AI suggestions instead of copying them directly, which helped me learn while maintaining academic integrity.
 
